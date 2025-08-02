@@ -1,6 +1,10 @@
 export function Card({ children, className }) {
   return (
-    <div className={`rounded-lg border border-gray-200 bg-white shadow-sm ${className || ''}`}>
+    <div
+      className={`rounded-xl border border-neutral-200 bg-white/70 backdrop-blur-sm shadow-sm transition-shadow hover:shadow-md ${
+        className || ""
+      }`}
+    >
       {children}
     </div>
   );
@@ -8,8 +12,6 @@ export function Card({ children, className }) {
 
 export function CardContent({ children, className }) {
   return (
-    <div className={`p-4 ${className || ''}`}>
-      {children}
-    </div>
+    <div className={`p-6 ${className || ""}`}>{children}</div>
   );
 }
