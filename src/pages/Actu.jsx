@@ -1,20 +1,41 @@
 import Layout from "../components/Layout";
+import { Card, CardContent } from "../components/ui/card";
 
 export default function Actu() {
   const posts = [
-    "Pourquoi le merchandising d’été déçoit",
+    {
+      title: "Pourquoi le merchandising d’été déçoit",
+      excerpt: "Analyse du catalogue 2025 en attente…",
+    },
+    {
+      title: "Le land Frozen avance-t-il vraiment ?",
+      excerpt: "Retour sur les dernières images satellites du chantier.",
+    },
+    {
+      title: "Premier Access : vers une nouvelle hausse ?",
+      excerpt: "Les signaux faibles d'une nouvelle évolution tarifaire.",
+    },
   ];
 
   return (
     <Layout>
-      <h2 className="text-2xl font-semibold mb-4">📰 Actualités</h2>
-      <ul className="space-y-4">
-        {posts.map((title, idx) => (
-          <li key={idx} className="border-b pb-2">
-            {title}
-          </li>
+      <section className="mb-10">
+        <h2 className="mb-2 text-4xl font-serif font-bold">📰 Actualités</h2>
+        <p className="text-neutral-600">
+          Décryptage des nouveautés, annonces et projets du parc.
+        </p>
+      </section>
+
+      <div className="space-y-6">
+        {posts.map((post, idx) => (
+          <Card key={idx}>
+            <CardContent>
+              <h3 className="text-lg font-semibold">{post.title}</h3>
+              <p className="mt-1 text-sm text-neutral-600">{post.excerpt}</p>
+            </CardContent>
+          </Card>
         ))}
-      </ul>
+      </div>
     </Layout>
   );
 }
