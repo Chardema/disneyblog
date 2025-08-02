@@ -26,7 +26,9 @@ export default function Layout({ children }) {
           </nav>
         </div>
       </header>
+
       <main className="flex-1 w-full max-w-3xl mx-auto px-6 py-10">{children}</main>
+
       <footer className="w-full border-t py-6 text-center text-xs text-neutral-500">
         Blog personnel non affilié à The Walt Disney Company © 2025
       </footer>

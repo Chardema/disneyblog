@@ -7,6 +7,14 @@ export default function Actu() {
       title: "Pourquoi le merchandising d’été déçoit",
       excerpt: "Analyse du catalogue 2025 en attente…",
     },
+    {
+      title: "Le land Frozen avance-t-il vraiment ?",
+      excerpt: "Retour sur les dernières images satellites du chantier.",
+    },
+    {
+      title: "Premier Access : vers une nouvelle hausse ?",
+      excerpt: "Les signaux faibles d'une nouvelle évolution tarifaire.",
+    },
   ];
 
   return (

@@ -7,6 +7,14 @@ export default function Nostalgie() {
       title: "Discoveryland et la SF rétro de mon enfance",
       excerpt: "Souvenirs d’un futur imaginé…",
     },
+    {
+      title: "Quand le Disneyland Hotel sentait encore le luxe européen",
+      excerpt: "Retour sur une époque feutrée aujourd’hui disparue.",
+    },
+    {
+      title: "Les musiques oubliées de Main Street",
+      excerpt: "Un voyage sonore dans les premières années du parc.",
+    },
   ];
 
   return (

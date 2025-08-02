@@ -7,6 +7,14 @@ export default function Critique() {
       title: "Le land Marvel trahit-il la promesse Disney ?",
       excerpt: "Réflexions sur l’intégration des super-héros au parc.",
     },
+    {
+      title: "Tarification dynamique : à quel prix la magie ?",
+      excerpt: "Analyse critique du modèle économique en place.",
+    },
+    {
+      title: "Design sonore : immersion ou bruitage de masse ?",
+      excerpt: "Une exploration des sons du parc… et de leur cohérence.",
+    },
   ];
 
   return (
