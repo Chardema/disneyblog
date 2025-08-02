@@ -1,16 +1,12 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-neutral-100 text-neutral-900">
-      <header className="p-6 border-b border-neutral-300 bg-white shadow-sm">
-        <h1 className="text-3xl font-serif font-bold">Regard DLP</h1>
-        <p className="text-sm text-neutral-500">Actu — Nostalgie — Critique</p>
-      </header>
-
-      <main className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <Layout>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Bloc Actu */}
         <Card>
           <CardContent className="p-6">
@@ -49,11 +45,7 @@ export default function Home() {
             </Button>
           </CardContent>
         </Card>
-      </main>
-
-      <footer className="p-6 text-center text-xs text-neutral-500 border-t border-neutral-300">
-        Blog personnel non affilié à The Walt Disney Company © 2025
-      </footer>
-    </div>
+      </div>
+    </Layout>
   );
 }
